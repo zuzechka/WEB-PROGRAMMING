@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: "Courier New", serif;
+    font-size: 14px;
+    color: lightslategray;
+    line-height: 1.6;
+}
+
+a::before{
+    content: "👾";
+}
+
+a::after{
+    content: "👾";
+}
+/* container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+}
+.intro{
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.bord1{
+    border:3px lightslategray dotted;
+}
+
+.bord2{
+    border: 3px lightslategray solid;
+}
