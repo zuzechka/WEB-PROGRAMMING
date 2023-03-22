@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Вхід</title>
-  <link rel="stylesheet" href="style_log.css">
+  <link rel="stylesheet" href="css/style_log.css">
 </head>
 <body>
   <div class="intro">
+        <form method="get" enctype="text/plain" class="form">
+            <h1 class="form_title">Вхід</h1>
 
+            <div class="form_group">
+                <input type="email" name="mail" class="form_input" placeholder=" ">
+                <label class="form_label">Email</label>
+            </div>
+
+            <div class="form_group">
+                <input type="password" name="pass" class="form_input" placeholder=" ">
+                <label class="form_label">Password</label>
+            </div>
+
+            <input type="submit" class="form_button" value="Війти"/>
+        </form>
   </div>
 
 </body>
