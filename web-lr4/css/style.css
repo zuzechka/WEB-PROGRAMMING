@@ -66,6 +66,7 @@ intro{
     width: 70%;
     background: #56817f;
     float: right;
+    border-left: 2px solid #fff;
 }
 
 .left_bar{
@@ -79,6 +80,51 @@ intro{
     height: 62px;
     width: 100%;
 }
+
+.img_left_bar{
+    padding-top: 30px;
+    padding-left: 90px;
+}
+
+.article_title{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Montserrat Thin", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.p{
+    text-align: left;
+    padding-top: 20px;
+    font-family: "Montserrat Thin", sans-serif;
+    color: #fff;
+    font-weight: 1000;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img_footer{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.social{
+    padding-top: 15px;
+    padding-right: 70px;
+    text-align: right;
+}
+
+.video_left_bar{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
 
 
 

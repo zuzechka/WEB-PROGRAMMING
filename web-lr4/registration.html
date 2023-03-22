@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="css/style_registr.css">
+</head>
+<body>
+    <div class="intro">
+      <div class="form_group">
+        <form method="get" enctype="text/plain" class="form">
+          <h1 class = "form_title">Реєстрація</h1>
+          <h2 class = "form_title2">Персональна інформація</h2>
+          <div class="forms-groups">
+              <label>
+                  <input required type="text" name="name" class="form_input" placeholder=" ">
+              </label>
+              <label class="form_label">Ім'я*</label>
+          </div>
+
+          <div class="forms-groups">
+            <input type="text" name="middle_name" class="form_input" placeholder=" ">
+            <label class="form_label">По-батькові</label>
+          </div>
+
+          <div class="forms-groups">
+            <input required type="text" name="last_name" class="form_input" placeholder=" ">
+            <label class="form_label">Прізвище*</label>
+          </div>
+
+          <h2 class = "form_title2">Адреса</h2>
+
+            <div class="forms-groups">
+                <label>
+                    <input type="text" name="address" class="form_input" placeholder=" ">
+                </label>
+                <label class="form_label">Повна адреса</label>
+            </div>
+
+            <div class="forms-groups">
+                <input type="text" name="address_city" class="form_input" placeholder=" ">
+                <label class="form_label">Місто</label>
+            </div>
+
+
+            <div class="select">
+                <label for = "city" class="form_label_select">Область</label>
+                <select class = "select_style" id = "city" name = "city">
+                    <option value="kharkiv">Харківська область</option>
+                    <option value="kiev">Київська область</option>
+                    <option value="odesa">Одеська область</option>
+                    <option value="poltava">Полтавська область</option>
+                    <option value="lviv">Львівська область</option>
+                </select>
+            </div>
+
+
+
+            <div class="forms-groups">
+                <input required type="text" name="code" class="form_input" placeholder=" ">
+                <label class="form_label">Поштовий індекс*</label>
+            </div>
+
+            <input type="submit" class="form_button" value="Реєстрація"/>
+
+            <div class="reg">
+                Є акаунт?
+                <a class = "link" href="login.html">
+                    Вхід
+                </a>
+            </div>
+
+        </form>
+
+      </div>
+    </div>
+</body>
+</html>
