@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB-LR5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 1
+        </div>
+
+        <p id = "task1"></p>
+        <p id = "x_one"></p>
+        <p id = "z_one"></p>
+        <p id = "y_one"></p>
+        <p id = "z_two"></p>
+        <p id = "x_two"></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 2
+        </div>
+
+        <div class="input">
+            <label for= "inp_1">Введіть 1 число = </label>
+            <input type="text" id="inp_1">
+        </div>
+
+        <div class="input">
+            <label for= "inp_2">Введіть 2 число = </label>
+            <input type="text" id="inp_2">
+        </div>
+
+        <div class="input">
+            <label for= "inp_3">Введіть 3 число = </label>
+            <input type="text" id="inp_3">
+        </div>
+        <button onclick="task2()" class = "button">Розрахунок</button>
+        <p>
+            Середнє арифтметичне: <b id = "res_arf"></b>
+        </p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 3
+        </div>
+
+        <div class="input">
+            <label for= "inp_4">Введіть радіус (r) = </label>
+            <input type="text" id="inp_4">
+        </div>
+
+        <div class="input">
+            <label for= "inp_5">Введіть висоту (h) = </label>
+            <input type="text" id="inp_5">
+        </div>
+
+        <button onclick="task3()" class = "button">Розрахунок</button>
+
+        <p>V = <b id = "v"></b></p>
+        <p>S = <b id = "s"></b></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 4
+        </div>
+
+        <div class="input">
+            <label for= "inp_a">Введіть число A = </label>
+            <input type="text" id="inp_a">
+        </div>
+
+        <div class="input">
+            <label for= "inp_b">Введіть число B = </label>
+            <input type="text" id="inp_b">
+        </div>
+
+        <button onclick="task4()" class = "button">Розрахунок</button>
+
+        <p>Сума в проміжку усіх чисел = <b id = "sum"></b></p>
+        <p>Усі непарні числа на проміжку = <b id = "num"></b></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 5
+        </div>
+
+        <div class="input">
+            <label for= "inp_tov">Введіть кількість товарів = </label>
+            <input type="text" id="inp_tov">
+        </div>
+
+        <button onclick="task5()" class = "button">Розрахунок</button>
+        <p>Кількість варіантів доставки = <b id = "fact"></b></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 6
+        </div>
+
+        <p id = "rect"></p>
+        <p id = "rect_tr"></p>
+        <p id = "triangle"></p>
+        <p id = "romb"></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 7
+        </div>
+
+        <div class="input">
+            <label for= "inp_n">Введіть кількість елементів у масиві = </label>
+            <input type="text" id="inp_n">
+        </div>
+
+        <button onclick="task7()" class = "button">Розрахунок</button>
+        <p>Масив = <b id = "arr"></b></p>
+        <p>Максимальне значення масиву = <b id = "max"></b></p>
+        <p>Мінімальне значення масиву = <b id = "min"></b></p>
+        <p>Сума елементів масиву = <b id = "sum_arr"></b></p>
+        <p>Среднє арифметичне = <b id = "arifm_arr"></b></p>
+        <p>Непарні значення = <b id = "num_arr"></b></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 8
+        </div>
+
+        <p>Масив(початковий):</p>
+        <p id = "mas"></p>
+
+        <p>Масив(перетворений):</p>
+        <p id = "new_mas"></p>
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 9
+        </div>
+
+        <div class="input">
+            <label for= "inp_num1">Введіть число A = </label>
+            <input type="text" id="inp_num1">
+        </div>
+
+        <div class="input">
+            <label for= "inp_num2">Введіть число B = </label>
+            <input type="text" id="inp_num2">
+        </div>
+
+        <div class="input">
+            <label for= "select">Виберіть операцію: </label>
+            <select id = "select">
+                <option value="one">Додавання</option>
+                <option value="two">Віднімання</option>
+                <option value="three">Множення</option>
+                <option value="four">Ділення</option>
+            </select>
+        </div>
+        <button onclick="task9()" class = "button">Розрахунок</button>
+
+        <p>Результат = <b id = "res_operation"></b></p>
+
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 10
+        </div>
+
+        <div class="input">
+            <label for= "inp_number">Введіть число = </label>
+            <input type="text" id="inp_number">
+        </div>
+        <button onclick="task10()" class = "button">Розрахунок</button>
+        <p id = "pol_otr"></p>
+        <p id = "prost"></p>
+        <p id = "del"></p>
+
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 11
+        </div>
+
+        <p id = "nums_value"></p>
+        <p id = "nums_add"></p>
+        <p id = "nums_sub"></p>
+        <p id = "nums_mul"></p>
+        <p id = "nums_div"></p>
+
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 12
+        </div>
+
+        <p id = "rect_2"></p>
+
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 13
+        </div>
+        <div class="input">
+            <label for= "inp_n_arr">Введіть кількість елементів масиву = </label>
+            <input type="text" id="inp_n_arr">
+        </div>
+        <button onclick="task13()" class = "button">Розрахунок</button>
+
+        <p>Масив = <b id = "array"></b></p>
+        <p>Масив (у зворотньому напрямку) = <b id = "rev_array"></b></p>
+
+
+        <!---**************************************** -->
+        <div class = "header">
+            TASK 14
+        </div>
+
+        <p id = "class_arifm"></p>
+
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

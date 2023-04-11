@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOP</title>
+    <style>
+        /* Стили для рамки */
+        .selected {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p class ="par">1 абзац.</p>
+    <p class ="par">2 абзац.</p>
+    <p class ="par">2 абзац.</p>
+
+    <button id="button">Додати параграф</button>
+    <div id="paragraph"></div>
+
+    <div id="test_div">Test DIV</div>
+    <p>Paragraph 1</p>
+    <a href="#">Link 1</a>
+    <p>Paragraph 2</p>
+    <a href="#">Link 2</a>
+    <p>Paragraph 3</p>
+    <a href="#">Link 3</a>
+
+    <button onclick="function selectAll(p1) {
+
+    }
+    selectAll('p')">Select All Paragraphs</button>
+    <button onclick="selectAll('a')">Select All Links</button>
+    <button onclick="selectDiv()">Select DIV</button>
+
+  <script src="script_dop.js"></script>
+</body>
+</html>
