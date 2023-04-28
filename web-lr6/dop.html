@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Угадайте число от 1 до 100</h1>
+  <p>Введите число:</p>
+  <input type="text" id="guess">
+  <button onclick="guessNumber()">Проверить</button>
+  <p id="result"></p>
+
+
+  <div class="login-page">
+      <div class="form">
+          <form class="login-form">
+              <input type="text" placeholder="Логин" id="username"/>
+              <input type="password" placeholder="Пароль" id="password"/>
+              <label for="remember-me">Запомнить меня</label>
+              <input type="checkbox" id="remember-me"/>
+              <button onclick="login()">Вход</button>
+          </form>
+      </div>
+  </div>
+
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+
+  <div id="myDiv">Этот текст будет перемещаться</div>
+  <button onclick="moveUp()">вверх</button>
+  <button onclick="moveDown()">вниз</button>
+  <button onclick="moveLeft()">влево</button>
+  <button onclick="moveRight()">вправо</button>
+
+
+  <script src="dop.js"></script>
+</body>
+</html>
