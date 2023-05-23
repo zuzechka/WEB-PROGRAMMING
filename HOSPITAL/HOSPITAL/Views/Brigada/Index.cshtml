@@ -1,0 +1,67 @@
+﻿@model HOSPITAL.Models.BrigadaViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Про врачей</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro {
+            height: 100vh;
+            width: 100%;
+            background-color: #f3f3f3;
+        }
+
+        .title {
+            width: 100%;
+            height: 140px;
+            font-size: 120px;
+            font-family: Montserrat, sans-serif;
+            color: #181616;
+            text-align: center;
+            padding-top: 30px;
+            border-bottom: 1px solid #181616;
+        }
+
+        .one {
+            width: 100%;
+            height: 100vh;
+            font-family: Montserrat;
+            font-size: 30px;
+            color: #181616;
+            padding-top: 30px;
+            float: right;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="title">
+            БРИГАДИ ШВИДКОЇ ДОПОМОГИ
+        </div>
+
+        <div class="one">
+            <div class="title_2">
+                НАЗВИ БРИГАД
+            </div>
+            <ol>
+                @foreach (var brigadas in Model.Brigadas)
+                {
+                    <li>@brigadas.Name</li>
+                }
+            </ol>
+        </div>
+
+  
+
+    </div>
+
+</body>
+</html>
+

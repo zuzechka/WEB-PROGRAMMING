@@ -1,0 +1,114 @@
+﻿@model HOSPITAL.Models.PatientViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Про врачей</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro {
+            height: 100vh;
+            width: 100%;
+            background-color: #f3f3f3;
+        }
+
+        .title {
+            width: 100%;
+            height: 140px;
+            font-size: 120px;
+            font-family: Montserrat, sans-serif;
+            color: #181616;
+            text-align: center;
+            padding-top: 30px;
+            border-bottom: 1px solid #181616;
+        }
+
+        .one {
+            width: 33%;
+            height: 100vh;
+            font-family: Montserrat;
+            font-size: 30px;
+            color: #181616;
+            padding-top: 30px;
+            float: right;
+        }
+
+        .title_2 {
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .two {
+            width: 33%;
+            height: 100vh;
+            font-family: Montserrat;
+            font-size: 30px;
+            color: #181616;
+            padding-top: 30px;
+            position: relative;
+            float: right;
+        }
+
+        .three {
+            width: 33%;
+            height: 100vh;
+            font-family: Montserrat;
+            font-size: 30px;
+            color: #181616;
+            padding-top: 30px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="title">
+            ХВОРІ
+        </div>
+
+        <div class="one">
+            <div class="title_2">
+                ЛІКАР
+            </div>
+            <ol>
+                @foreach (var patients in Model.Patients)
+                {
+                    <li>@patients.Doctor</li>
+                }
+            </ol>
+        </div>
+
+        <div class="two">
+            <div class="title_2">
+                ДІАГНОЗ
+            </div>
+            <ol>
+                @foreach (var patients in Model.Patients)
+                {
+                    <li>@patients.Direction</li>
+                }
+            </ol>
+        </div>
+
+        <div class="one">
+
+            <div class="title_2">
+                ІМ'Я
+            </div>
+            <ol>
+                @foreach (var patients in Model.Patients)
+                {
+                    <li>@patients.Name</li>
+                }
+            </ol>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

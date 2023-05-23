@@ -1,0 +1,93 @@
+﻿@model HOSPITAL.Models.DoctorsViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Про врачей</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro {
+            height: 100vh;
+            width: 100%;
+            background-color: #f3f3f3;
+        }
+
+        .title {
+            width: 100%;
+            height: 140px;
+            font-size: 120px;
+            font-family: Montserrat, sans-serif;
+            color: #181616;
+            text-align: center;
+            padding-top: 30px;
+            border-bottom: 1px solid #181616;
+        }
+
+        .one{
+            width:50%;
+            height:100vh;
+            font-family:Montserrat;
+            font-size:30px;
+            color:#181616;
+            padding-top:30px;
+            padding-left:200px;
+            float:right;
+        }
+
+        .title_2{
+            font-size:70px;
+            text-align:center;
+        }
+
+        .two {
+            width: 50%;
+            height: 100vh;
+            font-family: Montserrat;
+            font-size: 30px;
+            color: #181616;
+            padding-top: 30px;
+            padding-left: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="title">
+            ЛІКАРІ
+        </div>
+
+        <div class="one">
+            <div class="title_2">
+                ІМ'Я
+            </div>
+            <ol>
+                @foreach (var doctor in Model.Doctors)
+                {
+                    <li>@doctor.Name</li>
+                }
+            </ol>
+        </div>
+
+        <div class="two">
+            <div class="title_2">
+                НАПРАВЛЕННЯ
+            </div>
+            <ol>
+                @foreach (var doctor in Model.Doctors)
+                {
+                    <li>@doctor.Direction</li>
+                }
+            </ol>
+        </div>
+
+
+    </div>
+  
+</body>
+</html>
+
