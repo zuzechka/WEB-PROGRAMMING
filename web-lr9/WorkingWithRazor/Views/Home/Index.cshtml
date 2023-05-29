@@ -1,0 +1,23 @@
+﻿@model string[]
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Body {
+
+    <div class="view">
+        <h2>Названия фруктов</h2>
+        @foreach (string fruit in Model)
+        {
+            <br /><span><b>@fruit</b></span>
+        }
+    </div>
+    }
+
+    @*@section Footer {
+        <div class="view">
+            Это футер
+        </div>
+    }*@
